@@ -22,19 +22,6 @@ class Category(models.Model):
         return self.name
 
 
-# class Subcategory(models.Model):
-#     category = models.ForeignKey(Category,
-#                                  related_name='category',
-#                                  on_delete=models.CASCADE)
-#     title = models.CharField(max_length=50)
-#
-#     class Meta:
-#         verbose_name_plural = 'subcategories'
-#
-#     def __str__(self):
-#         return self.title
-
-
 class CommonFeatures(models.Model):
     name = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=10, decimal_places=2)
